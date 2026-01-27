@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MapGame 🗺️</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        body { background: #1a1a2e; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        #game { border: 2px solid #333; }
+        .waiting { color: white; font-family: sans-serif; text-align: center; padding: 40px; }
+        .waiting h1 { font-size: 2rem; margin-bottom: 20px; }
+        .waiting p { color: #888; }
+    </style>
+</head>
+<body>
+    <div id="game">
+        <div class="waiting">
+            <h1>🗺️ Waiting for maps!</h1>
+            <p>Add your LDtk maps to the /maps folder</p>
+            <p>Then Mojo will wire them up!</p>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
