@@ -1,22 +1,39 @@
-# MapGame 🗺️
+# MapGame
 
-A 2D game where Alex designs the maps and Mojo codes the logic!
+A 2D tile-based game where maps are designed in LDtk and the game logic runs on Phaser 3.
 
-## Tools
-- **Map Editor:** LDtk (https://ldtk.io) or Tiled
-- **Game Engine:** Phaser 3 (JavaScript)
-- **Hosting:** GitHub Pages (free)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Phaser](https://img.shields.io/badge/Phaser_3-blue)
 
-## Folder Structure
+## Play
+
+**[Launch MapGame](https://kashmot2.github.io/mapgame/)**
+
+## How It Works
+
+1. Design maps visually in [LDtk](https://ldtk.io)
+2. Save `.ldtk` files to the `/maps` folder
+3. The game engine loads and renders them in-browser
+
+## Project Structure
+
 ```
-/maps        - Your LDtk/Tiled map files go here
-/assets      - Sprites, tilesets, images
-/js          - Game code (Mojo handles this)
-index.html   - The game
+index.html   — Entry point
+js/          — Game logic (Phaser 3)
+maps/        — LDtk map files
+assets/      — Sprites, tilesets, images
 ```
 
-## How to add maps
-1. Create a map in LDtk
-2. Save the .ldtk file to the `/maps` folder
-3. Commit & push
-4. Mojo updates the code to load it!
+## Run Locally
+
+```bash
+git clone https://github.com/kashmot2/mapgame.git
+cd mapgame
+python3 -m http.server 8000
+# open http://localhost:8000
+```
+
+## License
+
+MIT
+
